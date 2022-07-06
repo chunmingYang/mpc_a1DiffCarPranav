@@ -1,0 +1,12 @@
+<take way>
+- openGL stuff warnimg "undefined reference to `glGetString'" that is library include fail
+- move all .o extension file "rm *.o"
+- object file created by macos is not suitable for linux
+- macos app library downloaded from homebrew cant be used in linux like nlopt.app
+- unveil the software installation
+	nlopt installnation
+		1, install the package from official website (https://nlopt.readthedocs.io/en/latest/)
+		2, follow the install instruction (https://nlopt.readthedocs.io/en/latest/NLopt_Installation/)
+		3, create symbolic link (ln -s /path/ /path/) for library and header file
+- the makefile including library is different from mac to linux mac like "LDFLAGS" linux like "-w -lnlopt ../bin/libnlopt.so"
+- the minimum format to use nlopt in linux (need to be arranged later)

@@ -1,0 +1,5 @@
+FOLDER=a1_trot19traj
+reset
+make -f makefile clean -C ../sample/$FOLDER
+make -f makefile -C ../sample/$FOLDER
+./$FOLDER ../model/a1.xml
